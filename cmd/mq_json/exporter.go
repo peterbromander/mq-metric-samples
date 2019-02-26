@@ -253,7 +253,7 @@ func Collect() error {
 	return err
 
 } 
-func postToUrl(url string, jsonStr string) {
+func postToUrl(url string, jsonStr []byte) {
    // url := "http://restapi3.apiary.io/notes"
     fmt.Println("URL:>", url)
 
