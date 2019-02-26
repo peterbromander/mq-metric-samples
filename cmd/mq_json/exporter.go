@@ -32,6 +32,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"strings"
 	"time"
+	"io/ioutil"
+	"net/http"
+	"bytes"
 )
 
 var (
@@ -250,7 +253,7 @@ func Collect() error {
 	return err
 
 } 
-func postToUrl(url String, jsonStr String) {
+func postToUrl(url string, jsonStr string) {
    // url := "http://restapi3.apiary.io/notes"
     fmt.Println("URL:>", url)
 
